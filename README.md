@@ -1,27 +1,60 @@
-# Pill-detection-using-YOLOX
-This is a real-time pill detection application built with YOLOX, ONNXRuntime, OpenCV, and Streamlit. It supports:
+💊 Pill Detection App using YOLOX, ONNXRuntime, OpenCV, and Streamlit
+This is a real-time pill detection application built with YOLOX, ONNXRuntime, OpenCV, and Streamlit.
 
-✅ Live webcam stream for detection
+✅ Key Features
+Live webcam stream for detection
 
-✅ Image upload for offline detection
+Image upload for offline detection
 
-✅ Automatic pill counting and validation based on dosage input
+Automatic pill counting and validation based on dosage input
 
 🖼️ App UI Features
-Upload or stream pills to count
+Upload or stream images of pills
 
 Specify number of pills required per day and how many times per day
 
-Detects pills (pill, capsule, medications) using a YOLOX ONNX model
+Detects pills (pill, capsule, medications) using a custom YOLOX ONNX model
 
-Tells if pills are missing or in excess
-To run the inference:
-create the env using Conda
-conda create env pill_detection python=3.10
-then
+Provides real-time feedback: whether to add or remove pills based on the dosage calculation
+
+⚙️ How to Run the Inference
+🧪 Step-by-Step Setup
+Create a Conda environment:
+
+bash
+Copy
+Edit
+conda create -n pill_detection python=3.10
+conda activate pill_detection
+Clone the YOLOX repository:
+
+bash
+Copy
+Edit
 git clone https://github.com/Megvii-BaseDetection/YOLOX.git yolox
-then 
+Install dependencies:
+
+bash
+Copy
+Edit
 pip install -r requirements.txt
-then
+Run the Streamlit app:
+
+bash
+Copy
+Edit
 streamlit run inference.py
-I provide some examples to text in the Images folder 
+🖼️ Sample Test Images
+You can find example images to test the app in the Images/ folder.
+
+🛠️ Requirements (requirements.txt)
+Here is a sample requirements.txt for your reference:
+
+nginx
+Copy
+Edit
+streamlit
+opencv-python
+onnxruntime
+numpy
+Add other packages you use (e.g., matplotlib, Pillow) as needed.
