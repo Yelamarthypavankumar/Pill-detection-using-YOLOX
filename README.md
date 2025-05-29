@@ -21,28 +21,20 @@ Provides real-time feedback: whether to add or remove pills based on the dosage 
 🧪 Step-by-Step Setup
 Create a Conda environment:
 
-bash
-Copy
-Edit
+
 conda create -n pill_detection python=3.10
 conda activate pill_detection
 Clone the YOLOX repository:
 
-bash
-Copy
-Edit
+
 git clone https://github.com/Megvii-BaseDetection/YOLOX.git yolox
 Install dependencies:
 
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
 Run the Streamlit app:
 
-bash
-Copy
-Edit
+
 streamlit run inference.py
 🖼️ Sample Test Images
 You can find example images to test the app in the Images/ folder.
@@ -50,9 +42,7 @@ You can find example images to test the app in the Images/ folder.
 🛠️ Requirements (requirements.txt)
 Here is a sample requirements.txt for your reference:
 
-nginx
-Copy
-Edit
+
 streamlit
 opencv-python
 onnxruntime
